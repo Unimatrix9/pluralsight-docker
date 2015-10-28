@@ -9,3 +9,29 @@
 crear repositorio en git (publico)
 entrar en directorio del projecto
 git init         (initialize repo)
+git add -A		(agrega todos los files)
+git commit -m "Initial commit"
+git remote add origin git@github.com:Unimatrix9/pluralsight-docker.git  (linkea el prpojecto con git ; mirar el comando en git ; SSH)
+git push -u origin master
+
+https://circleci.com/
+circle CI - continuos integration tool para automated workflow
+autorizar application en github
+ir a personal setting -> application -> authorized applications agregar circleCI
+despues volver a circleCI y seleccionar el projecto y te lo TESTEAAAAAAAAAAAAAAAAAAAAAA
+
+login to docker Hub
+settings -> link account and services
+linkear github , autrizar appplication
+
+create -> create automated build y linkeas el projecto  , de ahi cada vez que haya un cambio en git , docker va a crear una imagen con lo nuevo loocoo!! uncheck automated rebuilds
+en vez de automatic re-build , podemos crear un trigger  ;;;;;;;;;;;;;;; ir a build settings ,,,,,,,,,, activarlo , copiar url
+https://registry.hub.docker.com/u/ferchulen/pluralsight-docker/trigger/9186e59e-620e-4e5a-a154-125c4fa0abf9/
+ el trigger se copia en CIRCLE CI  en ENRIRONMENTAL VARIABLES
+ DOCKER_HUB_TRIGGER
+ 
+ despues en el archivo circle.yml se agreaga la automatizacion de DOCKER
+ GIT update/
+ git add circle.yml
+ git commit -m "added deploy section to circle.yml"
+ git push -u origin master
