@@ -1,0 +1,11 @@
+1- crear archivo package.job (copiar de la libreia en dropbox)
+2- app.js
+3- home.jade  (actually view of webpage)
+4- test directory , copiar 
+5- circle.yml copiar al projecto  host file , time zones , environment  how are going to deploy the app as soos as test past (MOKA -> que agarra test.js para testear)
+6- readme file , necesario para info de que se trata
+7- dockerfile    el mas importante: es como un script file to "dockerize" the app
+
+crear repositorio en git (publico)
+entrar en directorio del projecto
+git init         (initialize repo)
