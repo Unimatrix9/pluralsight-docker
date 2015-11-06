@@ -35,3 +35,26 @@ https://registry.hub.docker.com/u/ferchulen/pluralsight-docker/trigger/9186e59e-
  git add circle.yml
  git commit -m "added deploy section to circle.yml"
  git push -u origin master
+
+www.pluralsight.com/courses/aws-vpc-operations   (para parender mas)
+TUTM service nodes , --> tutum node cluster --> tutum service (Apps containers)   https://www.tutum.co/    The Docker Platform for Dev and Ops
+
+
+linkearse a la cuenta de cloud provider que vas a usar (cualquiera es soportada)
+ir a usuarios de AWS y agregar uno para tutum
+
+Tutum
+Access Key ID:
+AKIAJHQKWDV57BCPSAOA
+Secret Access Key:
+kvLeK6ZwiDOMOSR2Q3wO0UUaLg/pj7vl92Q+dDFU
+
+crear policy: to manage ec2 instnces   -> seleccionar policy generator , , Amazon EC2 , all actions Selected, * para todos los resources 
+una vez creada volver a usuarios y attachar policy to tutum
+
+tutum -> clicl on nodes   -> launch a node cluster
+
+una vez que la instance esta creada ,
+tutum services --> public repo ; search docker hub
+buscar tu public repo , (ferchulen) y va a importar datos del docker file
+ports (lo trae del docker file ) chequear dynamic  a port 80
